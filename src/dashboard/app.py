@@ -53,3 +53,6 @@ df_non_zero_reviews = df[df['reviews_rating_number'] > 0]
 satisfaction_by_brand = df_non_zero_reviews.groupby('brand')['reviews_rating_number'].mean().sort_values(ascending=False)
 col1.bar_chart(satisfaction_by_brand)
 col2.write(satisfaction_by_brand)
+
+
+st.write(df)
